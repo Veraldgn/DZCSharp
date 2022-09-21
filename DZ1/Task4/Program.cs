@@ -24,11 +24,14 @@ if(num1 > num2)
         }
 }
 
-else if(num2 > num3)
-{
-    Console.WriteLine($"max = {num2}");
-}
 else
 {
-     Console.WriteLine($"max = {num3}");
+    if(num2 > num3)
+        {
+            Console.WriteLine($"max = {num2}");
+        }
+    else
+        {
+            Console.WriteLine($"max = {num3}");
+        }
 }

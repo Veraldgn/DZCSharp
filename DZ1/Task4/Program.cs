@@ -4,13 +4,13 @@
 Console.Clear();
 
 Console.WriteLine("Введите первое число: ");
-int num1 = int.Parse(Console.ReadLine());
+int num1 = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Введите второе число: ");
-int num2 = int.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Введите третье число: ");
-int num3 = int.Parse(Console.ReadLine());
+int num3 = int.Parse(Console.ReadLine()!);
 
 if(num1 > num2)
 {

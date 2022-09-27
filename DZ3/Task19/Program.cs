@@ -28,7 +28,7 @@ else
 //другое решение задачи
 
 
-Console.Clear();
+
 
 Console.WriteLine("Введите пятизначное число: ");
 int num = Math.Abs(int.Parse(Console.ReadLine()!));

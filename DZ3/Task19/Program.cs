@@ -7,10 +7,10 @@
 Console.Clear();
 
 Console.WriteLine("Введите пятизначное число: ");
-string num = Console.ReadLine()!;
-if (num.Length == 5)
+string drom = Console.ReadLine()!;
+if (drom.Length == 5)
 {
-    if (num[0] == num[4] && num[1] == num[3])
+    if (drom[0] == drom[4] && drom[1] == drom[3])
     {
         Console.WriteLine("Это палиндром");
     }
@@ -22,4 +22,30 @@ if (num.Length == 5)
 else
 {
     Console.WriteLine("Введите ПЯТИЗНАЧНОЕ число");
+} 
+
+
+//другое решение задачи
+
+
+Console.Clear();
+
+Console.WriteLine("Введите пятизначное число: ");
+int num = Math.Abs(int.Parse(Console.ReadLine()!));
+int one = num / 10000 % 10;
+int two = num / 1000 % 10;
+int four = num / 10 % 10;
+int five = num % 10;
+
+if (num < 10000 || num > 100000)
+{
+    Console.WriteLine("Введите ПЯТИЗНАЧНОЕ число");
+}
+else if (one == five && two == four)
+{
+    Console.WriteLine("Это палиндром!");
+}
+else
+{
+    Console.WriteLine("Это не палиндром!");
 }

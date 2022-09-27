@@ -4,7 +4,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите  число: ");
-int numDay = int.Parse(Console.ReadLine()) - 1;
+int numDay = int.Parse(Console.ReadLine()!) - 1;
 
 int[] days = { 1, 2, 3, 4, 5, 6, 7 };
 

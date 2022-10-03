@@ -3,13 +3,6 @@
 82 -> 10
 9012 -> 12 */
 
-Console.Clear();
-
-Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine()!);
-int result = Sum(num);
-Console.WriteLine($"Сумма цифр = {result}");
-
 int Sum(int number)
 {
     int digit = 0;
@@ -20,3 +13,10 @@ int Sum(int number)
     }
     return digit;
 }
+
+Console.Clear();
+
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine()!);
+int result = Sum(num);
+Console.WriteLine($"Сумма цифр = {result}");
